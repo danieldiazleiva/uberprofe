@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #f1eec3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.caja
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:"header menu" 
+                        "boton1 boton2";
+}
+.contacto
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:"header menu" 
+                        "formu formu";
+}
+.contacto .formu
+{
+    grid-area: formu;
+    column-span: 2;
+    margin: auto;
+    margin-top: 100px;
+}
+.somos
+{
+    margin: 2px;
+    padding: 0px 5px 0px 5px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:"header menu" 
+                        "info imginfo";
+}
+.contenedor
+{
+    width: 98%;
+    margin: auto;
+}
+.caja .boton1
+{
+    margin: auto;
+    margin-top: 100px;
+    grid-area: boton1;
+}
+.caja .boton2
+{
+    margin-top: 100px;
+    grid-area: boton2;
+}
+.contenedor
+{
+    display: grid;
+    
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: "header menu"
+                        "imginfo info"
+                        "tabs tabs"
+                        "footer footer";
+}
+.info
+{
+    padding: 10px;
+    grid-area: info;
+}
+.imginfo
+{
+    padding: 10px;
+    grid-area: imginfo;
+}
+.header
+{
+    background-color:#87a3c1;
+    grid-area: header;
+}
+.menu{
+    grid-area: menu;
+    background-color: #87a3c1;
+    
+}
+.item 
+{
+    margin: 0 auto;
+    padding-top: 10px;;
+  
+}
+.contenedor .footer
+{
+    background-color: #f1eec3;
+    grid-area: footer;
+    border: 2px solid #c9d3a5;
+
+}
+.contenedor  #tabs
+{
+    grid-gap: 20px;
+    grid-area: tabs;
+    display: grid;
+    background-color: #f1eec3;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "pestañas"
+                         "texto";
+                         
+}
+.contenedor #tabs .pestañas
+{
+    grid-area: pestañas;
+}
+.contenedor #tabs .texto
+{
+    grid-area: texto;
+}
+.contenedor #tabs .texto
+{
+        grid-area: texto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "txt img "
+}
+.contenedor #tabs .texto .txt
+{
+    grid-area: txt;
+}
+.contenedor #tabs .texto .img
+{
+    grid-area: img;
+}
+ul.menu {
+    float:left;
+    display:block;
+
+    list-style-type:none;
+    }
+    .menu li {
+    line-height:18px;
+
+    position:relative;
+    float:left;
+    }
+    .menu li a {
+    color: #000;
+    padding: 5px 20px;
+    text-decoration:none;
+    }
+    .menu li a:hover {
+    
+    color:  #c9d3a5;
+    }
+    .menu li ul {
+    display:none;
+    position:absolute;
+    top:30px;
+    width: 180px;
+    background-color: #c9d3a5;
+    padding:0;
+    list-style-type:none;
+    }
+    .menu li ul li {
+    width: 180px;  
+    border: solid 1px #c9d3a5;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: #87a3c1;
+    }
+@media screen and (max-width: 768px)
+{
+    .contenedor
+    {
+        display: grid;
+    
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: "header"
+                            "menu"
+                            "imginfo"
+                            " info"
+                            "tabs"
+                            "footer";
+    }
+    .somos
+    {
+        display: grid;
+    
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: "header"
+                            "menu"
+                            "imginfo"
+                            " info";
+    }
+}
+   

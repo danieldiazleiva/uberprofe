@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('ul li:has(ul)').hover(function (e) {
+                $(this).find('ul').css({ display: "block" });
+            },
+                function (e) {
+                    $(this).find('ul').css({ display: "none" });
+                });
+        });
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="header">
+                <h1 id="titulo-principal">UBER-PROFE</h1>
+            </div>
+        </header>
+        <ul class="menu">
+
+            <li class="item"><a href="#">MENU</a>
+
+                <ul id="desple">
+                    <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
+                    <li><a href="contruccion.html">COMO FUNCIONA</a></li>
+                    <li><a href="contruccion.html">PAGOSEGURO</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="contacto.html">AYUDA</a></li>
+            <li class="item"><a href="ingreso.html">INGRESA</a></li>
+            <li class="item"><a href="registro.html">REGISTRATE</a></li>
+        </ul>
+
+        <article class="info">
+            <div id="quienes somos">
+                <h3>LLevamos la Educación a la era Digital</h3>
+                <p>con nuestros profesionales capacitados y nuevas metodologias que utilizan todo el potencial de las
+                    herramientas que nos proporcina el mundo digital llevamos el aprendizaje a la comodidad de tu hogar
+                </p>
+            </div>
+        </article>
+        <aside class="imginfo">
+            <img src="img/juanito4.jpg" style="width: 100%;" />
+        </aside>
+        <div id="tabs">
+            <div class="pestañas">
+                <ul>
+                    <li><a href="#tabs-1">EDUCA ONLINE</a></li>
+                    <li><a href="#tabs-2">PIDE TU CLASE AL INSTANTE</a></li>
+                    <li><a href="#tabs-3">AGENDA TU CLASE</a></li>
+                </ul>
+            </div>
+            <div class="texto" id="tabs-1">
+                <div class="txt">
+                    <p style="text-align: justify;">texto sobre los beneficios de nuestro servicio de clases
+                        particulares</p>
+                </div>
+
+                <div class="img">
+                    <img src="img/juanito1.jpg" style="width: 100%;" />
+                </div>
+            </div>
+            <div class="texto" id="tabs-2">
+                <div class="txt">
+                    <p>texto sobre el pedido de clases</p>
+                </div>
+                <div class="img">
+                    <img src="img/juanito2.jpg" style="width: 100%;" />
+                </div>
+            </div>
+            <div class="texto" id="tabs-3">
+                <div class="txt">
+                    <p>texto sobre agendar clases y el servicio de programarla</p>
+                </div>
+                <div class="img">
+                    <img src="img/juanito3.jpg" style="width: 100%;" />
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores repudiandae et nam harum voluptates
+                voluptatem labore praesentium exercitationem a, excepturi fuga, repellendus minus facilis illum natus
+                tempora! Quaerat, eaque accusantium?</p>
+        </div>
+    </div>
+</body>
+
+</html>

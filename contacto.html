@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function() {
+            $('ul li:has(ul)').hover(function(e) {
+                 $(this).find('ul').css({display: "block"});
+             },
+             function(e) {
+                 $(this).find('ul').css({display: "none"});
+             });
+        });
+         </script>
+</head>
+<body>
+    <div class="contacto">
+        <header>
+            <div class="header">
+                <h1 id="titulo-principal">UBER-PROFE</h1>
+            </div>
+        </header>
+        <ul class="menu">
+           
+                    <li class="item"><a href="#">MENU</a>
+
+                        <ul id="desple">
+                            <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
+                            <li><a href="#">COMO FUNCIONA</a></li>
+                            <li><a href="#">PAGOSEGURO</a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="contacto.html">AYUDA</a></li>
+                    <li class="item"><a href="principal3.html">inicio</a></li>
+                </ul>
+        <form class="formu">
+            <label for="nombre">Nombre</label>
+            <input type="text" style="width: 300px;" placeholder="Nombre" name="nombre" ><br>
+            <label for="apellido">Apellido</label>
+            <input type="text" style="width: 300px;" placeholder="Apellido" name="apellido" ><br>
+            <label for="mail">e-mail</label>
+            <input type="email" style="width: 314px;" placeholder="e-mail" name="mail"><br>
+            cuentanos tu problema y te contactaremos a la brevedad<br>
+            <input type="text" style="text-align:start; width: 400px; height: 200px;"><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function() {
+            $('ul li:has(ul)').hover(function(e) {
+                 $(this).find('ul').css({display: "block"});
+             },
+             function(e) {
+                 $(this).find('ul').css({display: "none"});
+             });
+        });
+         </script>
+</head>
+<body>
+    <div class="contacto">
+        <header>
+            <div class="header">
+                <h1 id="titulo-principal">UBER-PROFE</h1>
+            </div>
+        </header>
+        <ul class="menu">
+           
+                    <li class="item"><a href="#">MENU</a>
+
+                        <ul id="desple">
+                            <li><a href="quienessomos.html">QUIENES SOMOS</a></li>
+                            <li><a href="contruccion.html">COMO FUNCIONA</a></li>
+                            <li><a href="contruccion.html">PAGOSEGURO</a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="contacto.html">AYUDA</a></li>
+                    <li class="item"><a href="principal3.html">inicio</a></li>
+                </ul>
+        </div>
+        <div>
+            <h1 style="color: #87a3c1;">PAGINA EN CONTRUCCIÓN</h1>
+        </div>
+    </body>
+    </html>
